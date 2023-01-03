@@ -1,0 +1,406 @@
+/* FuENTES */
+@font-face {
+    font-family: "nevis";
+    src: url(".//fonts/nevis.eot");
+    src:url("./fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/nevis.woff") format("woff"),
+        url("./fonts/nevis.ttf") format("truetype"),
+        url("./fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-size: normal;    
+}
+@font-face {
+    font-family: "fajala";
+    src: url(".//fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-size: normal;    
+}
+@font-face {
+    font-family: "icons";
+    src: url(".//fonts/websymbols-regular-webfont.svg#webSymbolsRegular") format('svg');
+    src:url("./fonts/websymbols-regular-webfont.eot");
+    src:url("./fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("./fonts/websymbols-regular-webfont.ttf") format("truetype");   
+    font-weight: normal;
+    font-size: normal;    
+}
+
+/* ESTILOS GENERALES */
+
+
+*{
+    padding: 0PX;
+    margin: 0px;
+}
+
+body{
+    background-image: url(../images/paven.png) ;
+
+}
+/* FORMuLARIOS*/
+input[type="text"],
+input[type="text"],
+input[type="text"]{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2 px;
+    color: gray;
+    transition: all 300ms;
+}
+.icon{
+    font-family: "icons";
+    float: left;
+    margin-right: 5px;
+    font-size: 15px;
+    margin-top:-1px;
+    color:black;
+}
+
+/* ESTE CLEARFIX FUNCIONA PARA LIMPIAR LOS FLOTADOS Y NO ENCIME EL FOOTER CON LOS DIVS */
+.clearfix{
+    float: none;
+    clear:both;
+}
+
+/*Al pasar raton por formularios */
+input[type="text"]:focus,
+input[type="text"]:focus,
+input[type="text"]:focus{
+    border:1px solid #70b231;
+    color:black;
+}
+/*BOTONES */
+/*Formato de botones */
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+   margin-top: 5px;
+   margin-bottom: 8px;
+   margin-left: 60px;
+   background:#70b231;
+   color: #f2f3f2;
+   padding: 3px;
+   display: block;
+   text-align: center;
+   border-radius: 3px;
+   border: 1px solid green;
+   width: 60px;
+   height: 25px;
+   font-size: 13px;
+   box-shadow: 0px 0px 6px #747272 inset;
+   transition: all 300ms;
+   cursor: pointer;
+}
+/* Al colocar el puntero */
+
+input[type="submit"]:hover{
+   background: rgb(47, 134, 29);
+}
+/*Al dar clic en botón */
+input[type="submit"]:active{
+    text-shadow: 0px 0px 2px rgb(66, 65, 65);
+    box-shadow: 0px 0px 23px rgb(77, 75, 75) inset;
+ }
+
+
+
+
+
+/* CABECERA */
+#header{
+    width: 100%;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto; /* centra el div */
+}
+#header a{
+    text-decoration: none;
+}
+/*LOGO */
+#logotipo{
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+/*formato de imagen */
+#logotipo img{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 150px;
+}
+/* TEXTO DEL H1 */
+h1 a{
+    color: #70b231;/*para el color verde ya que es un enlace */
+}
+h1{
+    
+    text-align: center;
+    font-size: 40 px;
+    color: #70b231;
+    font-family: "nevis";
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms;
+}
+h1:hover{
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70b231;
+}
+/* MENU */
+#nav li{
+    position: relative;
+}
+#nav{
+    width: 100%;
+    background-color: #333333;
+    color:white;
+    height: 40px;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+#nav ul a{
+    /*Texto y margenes dentro de cada opción de menu*/
+    color:white;
+    text-decoration: none;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#nav ul{
+    /*general de menu para quitar la lista y dar formato*/
+    color:white;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1030px;
+}
+#nav ul li {
+     /*Para alinear a la derecha cada opcion del menu y marcar los bordes*/
+    line-height: 40px;
+    float: left;   
+    border-right: 1px solid gray; 
+    transition: all 300ms; 
+    
+}
+#nav >ul >li > a:first-child{  
+    /* Para el borde del menu inicio*/  
+    border-left: 1px solid gray; 
+}
+#nav >ul >li:hover{
+    /* Para animación al pasar el puntero por menu*/
+    background-color: #70b231;
+    box-shadow: 0px 0px 6px #70b231 inset;
+}
+/* MENU DESPPLEGABLE*/
+
+.submenu  {
+    
+    position: absolute;
+    background-color: #70b231;
+
+    box-shadow: 0px 2px 2px gray;
+    display: none;
+
+}
+.submenu li a{
+    text-transform: uppercase;
+    padding: 15px;
+    color:black;
+   
+
+}
+#nav > ul > li:hover{
+    display: block;
+}
+/*Fin menu desplegable*/
+
+
+
+
+
+/*Contenido General*/
+#content{
+    width: 95%;
+   /* width: 1250px;*/
+   /* min-height: 1100px;*/
+    margin: 0px auto;
+}
+/*ASIDE*/
+
+/*la caja*/
+.aside{
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: rgba(253, 255, 255, 0.808);
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*cada contenedor*/
+#widget{
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+#widget:last-child{
+    margin-bottom: 20px;
+}
+/*Encabezados dentro del ASIDE*/
+.aside h3{
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 12px;
+    background: #f2f3f2;
+    border: 1px solid #ccc;
+    border-left:none;
+    border-right: none;
+}
+#titulo2{
+    color:rgb(95, 95, 236);
+}
+#titulo3{
+    color: rgb(172, 39, 39);
+}
+/* contenedor 1 */
+#widget a{
+   
+    text-decoration: none;
+    color:#70b231;  
+    font-size: 14px;
+    display: block;
+}
+label{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-size: 12px;
+    margin: auto;
+}
+#widget ul{
+    display: block;
+    margin-left: 20px;
+}
+/* ASIDE cambiar color al pasar mouse por enlaces */
+#widget a:hover{
+    color:#333333;
+ }
+
+ /* SECCIOMES de CONTENIDO CENTRAL */
+ #sections{
+    display: block;
+    margin-top: -10px;
+    float:right;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 150px;
+    margin-bottom: 40px;
+ }
+ #sections h2{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-family: "fajala";
+    border-bottom:1px  #ccc solid;
+    letter-spacing: 1px;
+ }
+ #sections section{
+    color: #333333;
+    display: block;
+    width: 100%;
+    /*height: 300px;*/
+    border:1px solid #ccc;
+    margin-top: 40px;
+    margin-left: -178px;
+    background-color: white;
+    box-shadow: 0px 0px 4px #c9c9;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    overflow: hidden;
+ }
+ #sections p{
+    color: rgb(14, 13, 13);
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+ }
+ #sections a{
+    color:#70b231;
+    text-decoration: none;
+   
+ }
+ #sections a:hover{
+    color:darkblue;
+    text-decoration:underline 1px;
+  
+ }
+#sections .article{
+    margin: 10px;
+    margin-top: 20;
+    margin-bottom: 20px;
+    
+}
+#sections .date{
+    color: gray;
+    font-size: 12px;
+}
+/* FIN DE CONTENIDO CENTRAL */
+
+/* INICIO DEL FOOTER */
+#history{
+    float:right;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+}
+#history a{
+    text-decoration: none;
+    color: #189c75;
+}
+#history a:hover{
+    
+    color: #881278;
+}
+#footer{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #f2f3f2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+#footer a{
+    text-decoration: none;
+    color:#70b231;
+}
+
+/* FIN DEL FOOTER */

@@ -1,0 +1,27 @@
+@media (max-width:1884px){
+    #header{
+        width: 80%;
+        margin: 0 auto;
+        background: red;
+    }
+    #nav ul {
+        width: 80%;
+    }
+
+    #sections{
+        width: 60%;
+        display: block;
+        background: gray;
+        margin-left: 5px;
+        margin-right: 305px;
+        margin-bottom: 40px;
+    }
+    .aside{
+        margin-left: -103px;
+    }
+    #content {
+        width: 80%;
+        min-height: 1100px;
+        margin: 0px auto;
+    }
+}
